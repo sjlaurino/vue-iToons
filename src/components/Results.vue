@@ -57,12 +57,12 @@ export default {
   computed: {
     results() {
       return this.$store.state.results;
-      query = "";
     }
   },
   methods: {
     search() {
       this.$store.dispatch("getMusicByArtist", this.query);
+      this.query = "";
     },
     next() {
       this.activeIndex++;
