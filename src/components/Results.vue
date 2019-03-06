@@ -4,7 +4,7 @@
       <div class="col">
         <form @submit.prevent="search" class="form-group">
           <input type="text" placeholder="Artist Name" v-model="query" required>
-          <button class="btn btn-primary ml-2" type="submit">Search</button>
+          <button class="btn btn-primary ml-2 submit" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -86,10 +86,11 @@ export default {
 <style scoped>
 .results {
   background-image: url("../assets/macbook.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 30px;
-  height: 85vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 115vh;
+  background-position: center;
 }
 
 .card {

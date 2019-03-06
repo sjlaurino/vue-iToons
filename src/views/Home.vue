@@ -2,7 +2,7 @@
   <div class="home container-fluid">
     <div class="row">
       <div class="col">
-        <h1>iToons</h1>
+        <h1 class="title mt-2">iToons</h1>
       </div>
     </div>
     <results></results>
@@ -21,3 +21,9 @@
 
   }
 </script>
+
+<style>
+  .title {
+    font-family: 'Indie Flower', cursive;
+  }
+</style>
